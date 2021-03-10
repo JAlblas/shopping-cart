@@ -5,14 +5,15 @@ import './Shop.css';
 
 const Shop = () => {
     const [items, setItems] = useState(["shoes", "cartoons", "dog", "cat"]);
+    const itemList = items.map((item) =>
+        <div className="item">{item}</div>
+    );
     return (
     <div>
         <Navigation />
 
         <h1>Hello from Shop</h1>
-        {items.map((item) =>
-            <div className="item">{item}</div>
-        )}
+        {itemList}
         
     </div>
   );

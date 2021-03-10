@@ -11,12 +11,15 @@ nav {
   background-color: cornflowerblue;
 }
 
-nav ul {
-  list-style: none;
+#links {
   display: flex;
+  justify-content: flex-end;
+  margin-right: 15px;
 }
 
-nav a {
+#links a {
   text-decoration: none;
   color: #FFF;
+  padding: 15px;
+  font-weight: bold;
 }
