@@ -5,6 +5,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #EFEFEF;
+}
+
+#main {
+  width: 1200px;
+  margin: 0 auto;
+  background-color:#FFF;
+  height: 100vh;
+}
+
+#content {
+  padding: 25px;
 }
 
 nav {

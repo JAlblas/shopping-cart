@@ -11,9 +11,11 @@ const Shop = () => {
     return (
     <div>
         <Navigation />
+        <div id="content">
+            <h1>Hello from Shop</h1>
+            {itemList}
+        </div>
 
-        <h1>Hello from Shop</h1>
-        {itemList}
         
     </div>
   );

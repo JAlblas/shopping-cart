@@ -5,7 +5,10 @@ const Profile = () => {
   return (
     <div>
         <Navigation />
-        <h1>Hello from Profile</h1>
+        <div id="content">
+          <h1>Hello from Profile</h1>
+        </div>
+        
     </div>
   );
 };

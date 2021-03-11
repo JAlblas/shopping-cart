@@ -8,6 +8,7 @@ const Navigation = () => {
             <a href="/shop">Shop</a>
             <a href="/profile">Profile</a>
             <a href="/location">Locations</a>
+            <a href="/cart">Cart</a>
         </div>
      </nav>
   );

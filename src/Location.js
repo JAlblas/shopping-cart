@@ -9,7 +9,7 @@ const Location = () => {
     const [zoom, setZoom] = useState(12);
 
   return (
-      <div>
+      <div id="content">
           <Navigation />
           <button onClick={() => setZoom(zoom + 1)}>Zoom in map!</button>
           <button onClick={() => setZoom(zoom + -1)}>Zoom out map!</button>
