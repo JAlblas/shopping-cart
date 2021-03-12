@@ -1,4 +1,18 @@
-.item {
-    color: red;
-    border: 1px solid black;
+#products {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.product {
+    color: #000;
+    padding: 5px;
+}
+
+.product img {
+    display: block;   
+}
+
+.product button {
+    margin-top: 10px;
 }

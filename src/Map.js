@@ -28,7 +28,7 @@ const Map = ({center, zoom}) => {
             />
             <Marker position={center}>
                 <Popup>
-                    A pretty CSS3 popup. <br /> Easily customizable.
+                    Our main adress.
                 </Popup>
             </Marker>
         </MapContainer>

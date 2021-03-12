@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Map from './Map';
 import Navigation from './Navigation'
+import Footer from './Footer'
 
 import './Location.css';
 
@@ -9,11 +10,15 @@ const Location = () => {
     const [zoom, setZoom] = useState(12);
 
   return (
-      <div id="content">
+      <div>
           <Navigation />
-          <button onClick={() => setZoom(zoom + 1)}>Zoom in map!</button>
-          <button onClick={() => setZoom(zoom + -1)}>Zoom out map!</button>
-          <Map center={center} zoom={zoom}></Map>
+          <div id="content">
+            <h1>You can find us at the following locations:</h1>
+            <button onClick={() => setZoom(zoom + 1)}>Zoom in map!</button>
+            <button onClick={() => setZoom(zoom + -1)}>Zoom out map!</button>
+            <Map center={center} zoom={zoom}></Map>
+          </div>
+          <Footer />
       </div>
       
   );

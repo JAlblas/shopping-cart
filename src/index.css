@@ -6,21 +6,22 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #EFEFEF;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #main {
   width: 1200px;
   margin: 0 auto;
   background-color:#FFF;
-  height: 100vh;
 }
 
 #content {
-  padding: 25px;
+  padding: 10px 50px;
+
 }
 
 nav {
-  background-color: cornflowerblue;
+  background-color: rgb(60, 125, 245);
 }
 
 #links {
@@ -34,4 +35,10 @@ nav {
   color: #FFF;
   padding: 15px;
   font-weight: bold;
+}
+
+footer {
+  background-color: rgb(60, 125, 245);
+  padding: 5px 50px;
+  color: #FFF;
 }

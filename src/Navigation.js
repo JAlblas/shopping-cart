@@ -5,9 +5,9 @@ const Navigation = () => {
     <nav>
         <div id="links">
             <a href="/">Home</a>
-            <a href="/shop">Shop</a>
             <a href="/profile">Profile</a>
             <a href="/location">Locations</a>
+            <a href="/shop">Shop</a>
             <a href="/cart">Cart</a>
         </div>
      </nav>
