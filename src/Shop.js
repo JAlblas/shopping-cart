@@ -7,9 +7,9 @@ import './Shop.css';
 const Shop = (props) => {
     const productList = props.products.map((product) =>
         <div className="product">
-            <p>{product}</p>
+            <p>{product.name}</p>
             <img src="https://i.picsum.photos/id/795/200/200.jpg?hmac=frCAqjE9buwwg1NjgwTe6Ef_WWIJOl5h2c6-TFjnlA4"></img>
-            <button>Add to cart</button>
+            <button onClick={() => props.addToCart(product.id)}>Add to cart</button>
         </div>
     );
     return (
