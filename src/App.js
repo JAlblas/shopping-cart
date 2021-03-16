@@ -44,6 +44,9 @@ const App = () => {
     if (productInCart) {
       productInCart.quantity--;
       updatedCart[productIndex] = productInCart;
+      if (productInCart.quantity === 0) {
+        updatedCart.splice(productIndex, 1);
+      }
     } else {
       console.log("should not be possible");
     }
