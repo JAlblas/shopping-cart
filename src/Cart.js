@@ -3,10 +3,12 @@ import Navigation from './Navigation'
 import Footer from './Footer'
 
 const Cart = (props) => {
-  const productList = props.shoppingCart.map((product) =>
-  <div className="product">
-      <p>{product.name}</p>
-      <p>{product.quantity}</p>
+  console.log(props);
+  const productList = props.shoppingCart.map((cardBack) =>
+  <div className="product-cart">
+      <p>{cardBack.name}</p>
+      <p>{cardBack.quantity}</p>
+      <img src={cardBack.img}></img>
       <button>-</button>
       <button>+</button>
   </div>

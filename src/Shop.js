@@ -5,11 +5,11 @@ import Footer from './Footer'
 import './Shop.css';
 
 const Shop = (props) => {
-    const productList = props.products.map((product) =>
+    const cardList = props.cardBacks.map((cardBack) =>
         <div className="product">
-            <p>{product.name}</p>
-            <img src="https://i.picsum.photos/id/795/200/200.jpg?hmac=frCAqjE9buwwg1NjgwTe6Ef_WWIJOl5h2c6-TFjnlA4"></img>
-            <button onClick={() => props.addToCart(product.id)}>Add to cart</button>
+            <p>{cardBack.name}</p>
+            <img src={cardBack.img}></img>
+            <button onClick={() => props.addToCart(cardBack.cardBackId)}>Add to cart</button>
         </div>
     );
     return (
@@ -18,7 +18,7 @@ const Shop = (props) => {
         <div id="content">
             <h1>Shop</h1>
             <div id="products">
-                {productList}
+                {cardList}
             </div>
         </div>
         <Footer />

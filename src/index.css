@@ -37,6 +37,23 @@ nav {
   font-weight: bold;
 }
 
+.product {
+  margin-bottom: 25px;
+}
+
+.product p {
+  font-size: 1.4em;
+}
+
+.product img {
+  width: 60%;
+}
+
+.product-cart img {
+  width: 10%;
+  display: block;
+}
+
 footer {
   background-color: rgb(60, 125, 245);
   padding: 5px 50px;
