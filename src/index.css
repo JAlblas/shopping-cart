@@ -49,9 +49,16 @@ nav {
   width: 60%;
 }
 
+.product-cart {
+  border-bottom: 1px solid rgb(131, 131, 131);
+  padding-bottom: 25px;
+  font-weight: bold;
+}
+
 .product-cart img {
   width: 10%;
   display: block;
+  margin-bottom: 5px;
 }
 
 footer {

@@ -9,8 +9,8 @@ const Cart = (props) => {
       <p>{cardBack.name}</p>
       <p>{cardBack.quantity}</p>
       <img src={cardBack.img}></img>
-      <button>-</button>
-      <button>+</button>
+      <button onClick={() => props.removeFromCart(cardBack.id)}>-</button>
+      <button onClick={() => props.addToCart(cardBack.id)}>+</button>
   </div>
 );
   return (

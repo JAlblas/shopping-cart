@@ -15,12 +15,11 @@ const App = () => {
   });
 
   const addToCart = (id) => {
-    console.log("Adding to cart!");
-    console.log(id);
     let updatedCart = [...shoppingCart];
 
     let productId = cardbacks.find(x => x.cardBackId === id).cardBackId;
     let productImage = cardbacks.find(x => x.cardBackId === id).img;
+    let productName = cardbacks.find(x => x.cardBackId === id).name;
 
     let productIndex = updatedCart.findIndex(x => x.id === productId);
     let productInCart = updatedCart[productIndex];
@@ -29,7 +28,24 @@ const App = () => {
       productInCart.quantity++;
       updatedCart[productIndex] = productInCart;
     } else {
-      updatedCart.push({id: id, img: productImage, quantity: 1});
+      updatedCart.push({id: id, name: productName, img: productImage, quantity: 1});
+    }
+
+    setShoppingCart(updatedCart);
+  }
+
+  const removeFromCart = (id) => {
+    let updatedCart = [...shoppingCart];
+
+    let productId = cardbacks.find(x => x.cardBackId === id).cardBackId;
+    let productIndex = updatedCart.findIndex(x => x.id === productId);
+    let productInCart = updatedCart[productIndex];
+
+    if (productInCart) {
+      productInCart.quantity--;
+      updatedCart[productIndex] = productInCart;
+    } else {
+      console.log("should not be possible");
     }
 
     setShoppingCart(updatedCart);
@@ -69,7 +85,7 @@ const App = () => {
               <Shop cardBacks={cardbacks} addToCart={addToCart}/>
             </Route>
             <Route exact path="/cart">
-                <Cart shoppingCart={shoppingCart}/>
+                <Cart shoppingCart={shoppingCart} addToCart={addToCart} removeFromCart={removeFromCart}/>
             </Route>
       </Switch>
     </BrowserRouter>
